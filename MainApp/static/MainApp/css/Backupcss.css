@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Russo+One&display=swap');
+
+body {
+    background-color: #111013;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+#HeaderAnim {
+    margin-top: 40px;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+.text-logo-header {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #fff;
+    -webkit-text-stroke: 1px rgb(49, 49, 49);
+    text-align: center;
+    background-image: linear-gradient(to left,
+        transparent 0%,
+        rgba(99, 38, 94, 0) 33.33%,
+        rgb(192, 149, 255) 26.66%,
+        rgb(255, 0, 157) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    background-position: 100% 0;
+    transition: background-position 1s ease-in-out;
+}
+
+.text-logo-header-Anim {
+    background-position: 0 0;
+}
+
+.btn-get-service {
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 5px;
+    background: none;
+    padding: 0 20px;
+    white-space: nowrap;
+    color: rgb(183, 222, 255);
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.4s;
+    animation: btn-get-serviceAnim 2s infinite;
+}
+
+.btn-get-service-anim {
+    border-radius: 15px;
+    transform: scale(1.05);
+    font-size: 20px;
+}
+
+@keyframes btn-get-serviceAnim {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.MainContent {
+    width: 100%;
+    min-height: 50vh;
+    background-color: #111013;
+    padding-top: 100px;
+}
+
+#MainContent-Text h3 {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    color: rgb(192, 149, 255);
+    font-size: 2rem;
+}
+
+#ListService {
+    color: rgb(168, 109, 255);
+}
+
+/* --- Адаптивность --- */
+
+/* Малые устройства (≥576px) */
+@media (min-width: 576px) {
+    #MainContent-Text h3 { font-size: 2.2rem; }
+    .btn-get-service { font-size: 16px; height: 45px; }
+}
+
+/* Средние устройства (≥768px) */
+@media (min-width: 768px) {
+    #MainContent-Text h3 { font-size: 2.5rem; }
+    .btn-get-service { font-size: 18px; height: 50px; }
+}
+
+/* Большие устройства (≥992px) */
+@media (min-width: 992px) {
+    #MainContent-Text h3 { font-size: 3rem; }
+    .btn-get-service { font-size: 20px; height: 55px; }
+}
+
+/* Очень большие устройства (≥1200px) */
+@media (min-width: 1200px) {
+    #MainContent-Text h3 { font-size: 3.5rem; }
+    .btn-get-service { font-size: 22px; height: 60px; }
+}
