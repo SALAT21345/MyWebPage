@@ -1,0 +1,143 @@
+
+
+@media (min-width: 276px) {
+    :root{
+        --particleCount: 15;
+    }
+    body {
+        width: 100%;
+    }
+    #HeaderAnim {
+        height: 85vh;
+    }
+    .text-logo-header{
+        font-size: 50px;
+    }
+    .MainContent{
+        height: 35vh;
+    }
+    .btn-get-service{
+        height: 40px;
+        font-size: 14px;
+    }
+    
+    .DescriptionMainContent .col-10{
+        font-size: 14px;
+    }
+    .DescriptionMainContent{
+        /* margin-top: 10px; */
+        width: 100%;
+    }
+    .MainContent_AnimText{
+        font-size: 35px;
+    }
+    .AllService{
+        margin-top: 70px;
+    }
+    .AllService h1{
+        font-size: 25px;
+        margin-left: 40px;
+    }
+    /* .btn-Block-GetService{
+        height: 150px;
+        width: 100px;
+    } */
+}
+
+
+
+@media (min-width: 700px) {
+    :root{
+        --particleCount: 30;
+    }
+    .text-logo-header{
+        font-size: 80px;
+    }
+    .btn-get-service{
+        height: 50px;
+        font-size: 20px;
+
+        }
+    
+}
+@media (min-width: 991px) {
+    :root{
+        --particleCount: 60;
+    }
+    .text-logo-header{
+        font-size: 100px;
+    }
+        .btn-get-service{
+        height: 50px;
+        font-size: 24px;
+        
+    }
+    
+    /* .DescriptionMainContent .col-5{
+        font-size: 14px;
+    } */
+}
+@media (min-width: 1200px) {
+    :root{
+        --particleCount: 70;
+    }
+    
+    .text-logo-header{
+        font-size: 120px;
+    }
+
+    .btn-get-service{
+    height: 60px;
+    font-size: 30px;  
+    
+    }
+
+    .MainContent_AnimText{
+        font-size: 60px;
+    }
+
+    .DescriptionMainContent .col-10{
+        font-size: 18px;
+    }
+    .DescriptionMainContent-Text{
+        width: 42%;
+    }
+    .MainContent{
+        height: 50vh;
+    }
+    .AllService h1{
+        font-size: 28px;
+        margin-left: 150px;
+    }
+    /* .AllService h6{
+        /* font-size: 11px;
+        background-color: blue; 
+    } */
+    .btn-Block-GetService{
+        height: 320px;
+        width: 350px;
+    }
+
+}
+
+
+@media (min-height: 750px){
+    .DescriptionMainContent{
+        margin-top: 120px;
+    }
+}
+@media (min-height: 650px){
+    .DescriptionMainContent{
+        margin-top: 130px;
+    }
+}
+@media (min-height: 750px){
+    .DescriptionMainContent{
+        margin-top: 90px;
+    }
+}
+@media (min-height: 930px){
+    .DescriptionMainContent{
+        margin-top: 10px;
+    }
+}
